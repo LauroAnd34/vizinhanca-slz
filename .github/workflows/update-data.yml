@@ -22,8 +22,8 @@ jobs:
       - run: python scripts/update_data.py
       - name: Salvar dados novos
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "LauroAnd34"
+          git config user.email "176506872+LauroAnd34@users.noreply.github.com"
           git add data/
           git diff --cached --quiet || git commit -m "Atualiza dados do OpenStreetMap ($(date +%F))"
           git push
